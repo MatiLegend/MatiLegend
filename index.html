@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        label{
+            display: table;
+        
+        }
+        .fuente {
+            font-family:"Calibri", sans-serif;
+        }
+
+        .error {
+            background-color: red;
+        }
+    </style>
+    <script>
+
+        function validacion_apellido() {
+            var padre = /[A-Z]{3,15}/
+            var paterno = document.getElementById("paterno").value
+            if (padre.test(paterno)) {
+                document.getElementById("idMensajePaterno").innerHTML = "";
+            } else {
+                document.getElementById("idMensajePaterno").innerHTML = "Error, al ingresar el apellido ingreselo denuevo";
+                document.getElementById("paterno").focus();
+            }
+        }
+        function validarmail(correo) {
+            var email = /^[A-Za-z0-9!#$%&'+/=?^{|}~-]+(?:.[A-Za-z0-9!#$%&'+/=?^{|}~-]+)@(?:[A-Za-z0-9](?:[A-Za-z0-9-][A-Za-z0-9])?.)+[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?$/;
+            var esValido = email.test(correo);
+            if (esValido == true) {
+                document.getElementById("idMensajeEmail").innerHTML = "";
+            }
+            else {
+                document.getElementById("idMensajeEmail").innerHTML = "Error, al ingresar el correo ingreselo denuevo";
+                document.getElementById("correo").focus();
+            }
+        }
+
+        function formatRut(input) {
+            var ar = /^[0-9]{8,9}$/;
+            var rut = input.value.replace(/\D/g, '');
+            var formattedRut = rut.slice(0, -1) + '-' + rut.substr(-1);
+
+            if (!ar.test(rut)) {
+                document.getElementById("idMensajeRut").innerHTML = "Formato rut 12345678-9 y si contiene una k reemplace por un 0";
+            } else {
+                document.getElementById("idMensajeRut").innerHTML = "";
+                document.getElementById("rut").focus();
+            }
+
+            input.value = formattedRut;
+        }
+        function validacion_materno() {
+            var madre = /[a-z]{3,15}/
+            var materno = document.getElementById("materno").value
+            if (madre.test(materno)) {
+                document.getElementById("idMensajeMaterno").innerHTML = "";
+            } else {
+                document.getElementById("idMensajeMaterno").innerHTML = "Error, al ingresar el apellido ingreselo denuevo";
+                document.getElementById("materno").focus();
+            }
+        }
+
+        function resultado() {
+            var p1, p2, p3, p4, p5, p6, p7, nota;
+
+
+            if (document.getElementById('p4').checked == true) { p1 = 3 }
+            else { p1 = 0 }
+
+            if (document.getElementById('p6').checked == true) { p2 = 3 }
+            else { p2 = 0 }
+ 
+            if (document.getElementById('p12').checked == true) { p3 = 3 }
+            else { p3 = 0 }
+
+            if (document.getElementById('p15').checked == true) { p4 = 3 }
+            else { p4 = 0 }
+
+            if (document.getElementById('p17').checked == true) { p5 = 3 }
+            else { p5 = 0 }
+
+            if (document.getElementById('p23').checked == true) { p6 = 3 }
+            else { p6 = 0 }
+
+            if (document.getElementById('p25').checked == true) { p7 = 3 }
+            else { p7 = 0 }
+            nota = (parseFloat((p1 + p2 + p3 + p4 + p5 + p6 + p7) / 21) * 7).toFixed(1);
+            document.getElementById("promedio").value = nota;
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <fieldset style="background-color: #C9DBB2">
+            <legend style="background-color: #FEE8B0;">Datos Personales</legend>
+            <label for="rut">Rut:</label>
+            <input style="background-color: #FEE8B0;" type="text" id="rut" oninput="formatRut(this)" required><br>
+            <small>
+                <div class="error fuente" id="idMensajeRut"></div>
+            </small>
+
+
+            <label for="matricula">Matricula:</label>
+            <input style="background-color: #FEE8B0;" type="number" value="2146713" readonly><br>
+
+            <label for="nombre">Nombre:</label>
+            <input  style="background-color: #FEE8B0;" type="text" id="nombre" pattern="[A-Za-z]{3,15}" required><br>
+
+            <label for="paterno">Apellido Paterno:</label>
+            <input  style="background-color: #FEE8B0;" type="text" name="paterno" id="paterno" placeholder="Solo mayúsculas"
+                onchange="validacion_apellido()" required><br>
+            <small>
+                <div class="error fuente" id="idMensajePaterno"></div>
+            </small>
+
+            <label for="materno">Apellido Materno:</label>
+            <input  style="background-color: #FEE8B0;" type="text" name="materno" id="materno" placeholder="Solo minúsculas" onchange="validacion_materno()"
+                required><br>
+            <small>
+                <div class="error fuente" id="idMensajeMaterno"></div>
+            </small>
+            <label for="correo">Mail:</label>
+            <input style="background-color: #FEE8B0;" type="text" id="correo" placeholder="Ingrese su Mail" onchange="validarmail(correo.value)" required>
+            <small>
+                <div class="error fuente" id="idMensajeEmail"></div>
+            </small>
+        </fieldset>
+
+        <fieldset style="background-color: #C9DBB2">
+            <legend style="background-color: #FEE8B0;">Preguntas Anime</legend>
+
+            <u><p><strong>1- ¿En que fecha fue emitido el primer anime del mundo? </strong></p></u>
+            <ol type="A">
+                <li><input type="radio" name="pregunta1" id="p1"> 1984</li>
+                <li><input type="radio" name="pregunta1" id="p2"> 1990</li>
+                <li><input type="radio" name="pregunta1" id="p3"> 1982</li>
+                <li><input type="radio" name="pregunta1" id="p4"> 1960</li> 
+            </ol>
+           <u><p><strong>2- ¿Cual es el anime con mas capitulos? </strong></p></u>
+            <ol type="A">
+                <li><input type="radio" name="pregunta2" id="p5"> One Piece</li>
+                <li><input type="radio" name="pregunta2" id="p6"> Sazae-san</li> 
+                <li><input type="radio" name="pregunta2" id="p7"> Naruto</li>
+                <li><input type="radio" name="pregunta2" id="p8"> Detective Conan</li>
+            </ol>
+            <u><p><strong>3- ¿Cuantos capitulos tiene Naruto?</strong></p></u>
+            <ol type="A">
+                <li><input type="radio" name="pregunta3" id="p9"> 750</li>
+                <li><input type="radio" name="pregunta3" id="p10"> 700</li>
+                <li><input type="radio" name="pregunta3" id="p11"> 690</li>
+                <li><input type="radio" name="pregunta3" id="p12"> 720</li> 
+            </ol>
+            <u><p><strong>4- ¿Como se llama el creador de Dragon Ball?</strong></p></u>
+            <ol type="A">
+                <li><input type="radio" name="pregunta4" id="p13"> Eichiro Oda</li>
+                <li><input type="radio" name="pregunta4" id="p14"> Masashi Kishimoto</li>
+                <li><input type="radio" name="pregunta4" id="p15"> Akira Toriyama</li> 
+                <li><input type="radio" name="pregunta4" id="p16"> Hajime Isayama</li>
+            </ol>
+            
+            <u><p><strong>5- Son transportados a un mundo muy diferente corresponde al genero de: </strong></p></u>
+            <ol type="A">
+                <li><input type="radio" name="pregunta5" id="p17"> Isekai</li> 
+                <li><input type="radio" name="pregunta5" id="p18"> Shonnen</li>
+                <li><input type="radio" name="pregunta5" id="p19"> Seinen</li>
+                <li><input type="radio" name="pregunta5" id="p20"> Shojo</li>
+            </ol>
+            <u><p><strong>6- ¿Cuantos capitulos tiene Dragon Ball? </strong></p></u>
+            <ol type="A">
+                <li><input type="radio" name="pregunta6" id="p21"> 700</li>
+                <li><input type="radio" name="pregunta6" id="p22"> 695</li>
+                <li><input type="radio" name="pregunta6" id="p23"> 639</li> 
+                <li><input type="radio" name="pregunta6" id="p24"> 650</li>
+            </ol>
+            <u><p><strong>7- ¿Que genero es Death Note?</strong></p></u>
+            <ol type="A">
+                <li><input type="radio" name="pregunta7" id="p25"> Shonnen</li>
+                <li><input type="radio" name="pregunta7" id="p26"> Isekai</li>
+                <li><input type="radio" name="pregunta7" id="p27"> Seinen</li>
+                <li><input type="radio" name="pregunta7" id="p28"> Shojo</li>
+            </ol>
+            <hr /> 
+        <input style="background-color: #FEE8B0;" type="button" value="Calcular Nota" onclick="resultado()"> <input style="background-color: #FEE8B0;"type="text" id="promedio" readonly>
+        </fieldset>
+        <input style="background-color: #FEE8B0;" type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
