@@ -29,12 +29,21 @@
 
 ```typescript
 const matias = {
-  nombre:     "Matias Joaquín López Parraguez",
-  educacion:  "Ingeniero en Informática (INACAP)",
-  rol:        "Full Stack Developer",
-  stack:      ["Next.js", "React", "TypeScript", "Node.js", "Python", "Kotlin"],
+  nombre: "Matias Joaquín López Parraguez",
+  educacion: "Ingeniero en Informática (INACAP)",
+  rol: "Full Stack Developer",
   experiencia: ["Komatsu Chile (Software Engineer)", "EQUIFAR S.A. (Mobile & Desktop Dev)"],
-  intereses:  ["Desarrollo End-to-End", "Análisis de Datos", "Automatización"],
+  habilidades: {
+    frontend: ["React", "Next.js", "Tailwind CSS", "JavaScript XML", "Android Studio", "Electron Framework"],
+    backend: ["Node.js", "PHP", "Java", "Python", "Django", "Kotlin"],
+    basesDeDatos: ["MySQL", "Oracle", "MongoDB"],
+    cloudYDevOps: ["Azure DevOps", "Git", "GitHub", "Firebase", "Google Cloud"],
+    analisisDeDatos: ["Power BI", "Pandas", "Matplotlib"],
+    mobileYDesktop: ["Android Studio", "Electron Framework"],
+    herramientas: ["Microsoft Excel", "Power BI", "Word", "PowerPoint", "Outlook"],
+    metodologias: ["Scrum", "Kanban", "Scrumban"],
+    blandas: ["Trabajo en Equipo", "Habilidades Comunicacionales", "Proactividad", "Adaptabilidad"]
+  },
   actualmente: "Construyendo soluciones escalables y dashboards interactivos 🚀",
 };
 ```
