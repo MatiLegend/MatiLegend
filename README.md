@@ -15,10 +15,6 @@
 <a href="https://github.com/MatiLegend" target="_blank">
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
-&nbsp;
-<a href="https://formulario-matilegend.netlify.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Portfolio"/>
-</a>
 
 <br/><br/>
 
@@ -33,12 +29,13 @@
 
 ```typescript
 const matias = {
-  nombre:     "Matias Lopez",
-  ubicacion:  "Chile 🇨🇱",
+  nombre:     "Matias Joaquín López Parraguez",
+  educacion:  "Ingeniero en Informática (INACAP)",
   rol:        "Full Stack Developer",
-  stack:      ["Next.js", "React", "TypeScript", "TailwindCSS"],
-  intereses:  ["Data Visualization", "UX/UI", "Automatización"],
-  actualmente: "Construyendo dashboards interactivos con Next.js 🚀",
+  stack:      ["Next.js", "React", "TypeScript", "Node.js", "Python", "Kotlin"],
+  experiencia: ["Komatsu Chile (Software Engineer)", "EQUIFAR S.A. (Mobile & Desktop Dev)"],
+  intereses:  ["Desarrollo End-to-End", "Análisis de Datos", "Automatización"],
+  actualmente: "Construyendo soluciones escalables y dashboards interactivos 🚀",
 };
 ```
 
@@ -73,9 +70,9 @@ const matias = {
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=MatiLegend&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=3b82f6&icon_color=3b82f6" alt="GitHub Stats"/>
+<img height="180em" src="https://readme-stats.com/api?username=MatiLegend&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=3b82f6&icon_color=3b82f6" alt="GitHub Stats"/>
 &nbsp;&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatiLegend&layout=compact&langs_count=7&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6" alt="Top Languages"/>
+<img height="180em" src="https://readme-stats.com/api/top-langs/?username=MatiLegend&layout=compact&langs_count=7&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6" alt="Top Languages"/>
 
 <br/>
 
@@ -90,7 +87,7 @@ const matias = {
 <div align="center">
 
 <a href="https://github.com/MatiLegend/WEB_PIM2">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=MatiLegend&repo=WEB_PIM2&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6&icon_color=f97316" alt="Gestión PIM"/>
+  <img src="https://readme-stats.com/api/pin/?username=MatiLegend&repo=WEB_PIM2&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6&icon_color=f97316" alt="Gestión PIM"/>
 </a>
 
 </div>
@@ -99,8 +96,9 @@ const matias = {
 
 | 🏆 Proyecto | 📝 Descripción | 🔧 Stack |
 |---|---|---|
-| [**Gestión PIM**](https://github.com/MatiLegend/WEB_PIM2) | Dashboard de monitoreo y análisis de alertas predictivas para equipos industriales | Next.js · TypeScript · Chart.js · IndexedDB |
-| [**Formulario Web**](https://formulario-matilegend.netlify.app/) | Aplicación web de formulario dinámico desplegada en Netlify | HTML · CSS · JavaScript |
+| [**Gestión PIM**](https://github.com/MatiLegend/WEB_PIM2) | Dashboard de monitoreo y análisis de alertas predictivas para equipos industriales (Desarrollado en Komatsu) | Next.js · TypeScript · Chart.js · IndexedDB |
+| **GestiApp Módulo Móvil** | App nativa en Kotlin para digitalización de servicios técnicos en terreno (EQUIFAR) | Kotlin · Android Studio · Google Cloud |
+| **GestiApp Desktop** | Plataforma administrativa de gestión técnica multiplataforma (EQUIFAR) | React · Electron · Node.js · Firebase |
 
 ---
 
