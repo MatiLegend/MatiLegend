@@ -105,15 +105,7 @@ const matias = {
 | **GestiApp Módulo Móvil** | App nativa en Kotlin para digitalización de servicios técnicos en terreno (EQUIFAR) | Kotlin · Android Studio · Google Cloud |
 | **GestiApp Desktop** | Plataforma administrativa de gestión técnica multiplataforma (EQUIFAR) | React · Electron · Node.js · Firebase |
 
----
 
-## 📈 Actividad
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MatiLegend&bg_color=0d1117&color=3b82f6&line=3b82f6&point=f97316&area=true&hide_border=true" alt="Activity Graph"/>
-</div>
-
----
 
 <div align="center">
 
