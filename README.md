@@ -85,11 +85,7 @@ const matias = {
 ## 🚀 Proyectos destacados
 
 <div align="center">
-
-<a href="https://github.com/MatiLegend/WEB_PIM2">
-  <img src="https://opengraph.githubassets.com/1/MatiLegend/WEB_PIM2" alt="Gestión PIM" width="600px" style="border-radius: 12px;"/>
-</a>
-
+  <!-- Pinned projects can go here in the future -->
 </div>
 
 <br/>
