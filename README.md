@@ -70,9 +70,9 @@ const matias = {
 
 <div align="center">
 
-<img height="180em" src="https://readme-stats.com/api?username=MatiLegend&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=3b82f6&icon_color=3b82f6" alt="GitHub Stats"/>
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MatiLegend&theme=tokyonight" alt="GitHub Stats"/>
 &nbsp;&nbsp;
-<img height="180em" src="https://readme-stats.com/api/top-langs/?username=MatiLegend&layout=compact&langs_count=7&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6" alt="Top Languages"/>
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MatiLegend&theme=tokyonight" alt="Top Languages"/>
 
 <br/>
 
@@ -87,7 +87,7 @@ const matias = {
 <div align="center">
 
 <a href="https://github.com/MatiLegend/WEB_PIM2">
-  <img src="https://readme-stats.com/api/pin/?username=MatiLegend&repo=WEB_PIM2&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=3b82f6&icon_color=f97316" alt="Gestión PIM"/>
+  <img src="https://opengraph.githubassets.com/1/MatiLegend/WEB_PIM2" alt="Gestión PIM" width="600px" style="border-radius: 12px;"/>
 </a>
 
 </div>
