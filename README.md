@@ -34,7 +34,7 @@ const matias = {
   rol: "Full Stack Developer",
   experiencia: ["Komatsu Chile (Software Engineer)", "EQUIFAR S.A. (Mobile & Desktop Dev)"],
   habilidades: {
-    frontend: ["React", "Next.js", "Tailwind CSS", "JavaScript XML", "Android Studio", "Electron Framework"],
+    frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript XML", "Android Studio", "Electron Framework"],
     backend: ["Node.js", "PHP", "Java", "Python", "Django", "Kotlin"],
     basesDeDatos: ["MySQL", "Oracle", "MongoDB"],
     cloudYDevOps: ["Azure DevOps", "Git", "GitHub", "Firebase", "Google Cloud"],
