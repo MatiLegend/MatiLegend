@@ -104,6 +104,7 @@ const matias = {
 | [**Gestión PIM**](https://github.com/MatiLegend/WEB_PIM2) | Dashboard de monitoreo y análisis de alertas predictivas para equipos industriales (Desarrollado en Komatsu) | Next.js · TypeScript · Chart.js · IndexedDB |
 | **GestiApp Módulo Móvil** | App nativa en Kotlin para digitalización de servicios técnicos en terreno (EQUIFAR) | Kotlin · Android Studio · Google Cloud |
 | **GestiApp Desktop** | Plataforma administrativa de gestión técnica multiplataforma (EQUIFAR) | React · Electron · Node.js · Firebase |
+| [**Proyecto ANFA**](https://github.com/MatiLegend/anfa) | Plataforma de gestión deportiva para ANFA | Next.js · React · TypeScript |
 
 
 
